@@ -13,5 +13,5 @@ local isHealthCritical = healthPercentage <= 0.25
 if isHealthCritical then
     print("Vida Baixa!")
 else
-    pint("Tudo bem!")
+    print("Tudo bem!")
 end
