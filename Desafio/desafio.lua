@@ -50,7 +50,6 @@ print("|     inteligencia:       "..inteligence..getProgressBar(inteligence))
 print("===================================================")
 
 -- Verso cartão
-
 print("===================================================")
 print("          "..emoji..MONSTER_NAME..emoji)
 print("       🟩🟩🟩🟩🟩🟩🟩🟩")
