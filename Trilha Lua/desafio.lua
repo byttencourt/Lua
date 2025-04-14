@@ -48,3 +48,19 @@ print("|     Vida:               "..life..getProgressBar(life))
 print("|     Velocidade:         "..speed..getProgressBar(speed))
 print("|     inteligencia:       "..inteligence..getProgressBar(inteligence))
 print("===================================================")
+
+-- Verso cartão
+
+print("===================================================")
+print("          "..emoji..MONSTER_NAME..emoji)
+print("       🟩🟩🟩🟩🟩🟩🟩🟩")
+print("       🟩⬛⬛🟩🟩⬛⬛🟩")
+print("       🟩⬛⬛🟩🟩⬛⬛🟩")
+print("       🟩🟩🟩⬛⬛🟩🟩🟩")
+print("       🟩🟩🟩⬛⬛🟩🟩🟩")
+print("       🟩🟩⬛⬛⬛⬛🟩🟩")
+print("       🟩🟩⬛🟩🟩⬛🟩🟩")
+print("       🟩🟩🟩🟩🟩🟩🟩🟩")
+print("===================================================")
+
+
