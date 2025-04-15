@@ -1,9 +1,12 @@
--- para funcionar o emoji chcp 65001
+-- para funcionar o emojis e acentos (chcp 65001)
 os.execute("chcp 65001")
 
 -- função sem parametro e sem retorno
-local function sayHello()
-    print("Olá usuáario, seja bem vindo")
+local function sayHello(name)
+    if name == nil then -- checa se nome tem um valor
+        name = "Indivíduo Indigente" --setou nome como ID
+    end
+    print("Olá "..name..", seja bem vindo")
     
 end
 
@@ -27,8 +30,10 @@ local function convertMany(mph1, mph2, mph3)
     return m1,m2,m3
 end
 local a, b, c = convertMany(40,60,80)
-sayHello()
+
+sayHello("NINO") -- envia nome
 print("Olá hoje é "..getDate())
 print("O veículo está em "..kph.."km/h.")
 print("Conversões de velocidades 40/60/80 Mp/h: "..a.." / "..b.." / "..c.." Km/h.")
+
 
