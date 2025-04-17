@@ -1,5 +1,0 @@
-local tabelas = {}
-
-function ()
-    
-end
