@@ -1,0 +1,3 @@
+local galinha = {}
+
+return galinha
