@@ -41,7 +41,6 @@ utils.printCreature(boss)
 
 while true do
     -- mostrar opções para o jogodador
-    print("O que você vai fazer?")
     option = io.input()
 
     -- simular o turno do jogodor
@@ -51,7 +50,7 @@ while true do
         break
     end
     -- simular o turno da criatura
-    
+
     --ponto de saida jogador sem vida
     if player.health <= 0 then
         break
