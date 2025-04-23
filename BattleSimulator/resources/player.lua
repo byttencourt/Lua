@@ -1,0 +1,11 @@
+local player = {}
+
+    player.name = "Nick"
+    player.description = "Um destemido e lendário guerreiro de façanhas imensuráveis."
+    player.maxHealth = 10
+    player.health = 10
+    player.attack = 4
+    player.defense = 2
+    player.speed = 3
+
+return player
