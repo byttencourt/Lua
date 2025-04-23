@@ -49,6 +49,8 @@ function actions.build(playerData)
             local regenPoints = 5
             playerData.health = math.min(playerData.maxHealth, playerData.health + regenPoints)
             print(string.format("%s utilizou uma poção e recuperou alguns pontos de vida!", playerData.name))
+            local healthRate = math.floor((playerData.health / playerData.maxHealth) * 10)
+            print(string.format("%s: %s", playerData.name, utils.getProgressBar(healthRate)))
         end
     }
     actions.list[#actions.list+1] = swordAttack

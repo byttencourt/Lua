@@ -1,6 +1,6 @@
 local player = {}
 
-    player.name = "Nick"
+    player.name = "Indivíduo desconhecido"
     player.description = "Um destemido e lendário guerreiro de façanhas imensuráveis."
     player.maxHealth = 10
     player.health = 10

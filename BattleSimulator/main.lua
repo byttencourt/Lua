@@ -66,6 +66,7 @@ while true do
     end
     --ponto de saida Boss sem vida
     if boss.health <=0 then
+        utils.space()
         print(string.format("%s venceu o confronto! Nem o %s é paril para ele!", player.name, boss.name))
         utils.credits()
         break
@@ -78,8 +79,10 @@ while true do
 
     --ponto de saida jogador sem vida
     if player.health <= 0 then
+        utils.space()
         print(string.format("%s Perdeu o confronto! %s parece imbatível!", player.name, boss.name))
         utils.credits()
+        utils.lapide()
         break
     end
 end
