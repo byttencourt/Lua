@@ -85,4 +85,11 @@ function utils.printCreature(creature)
 
 end
 
+function utils.ask()
+   io.write("> ") 
+   local answer = io.read("*n")
+   return answer
+end
+
+
 return utils

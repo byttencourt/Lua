@@ -7,5 +7,6 @@ local player = {}
     player.attack = 4
     player.defense = 2
     player.speed = 3
+    player.potions = 3
 
 return player
