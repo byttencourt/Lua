@@ -1,7 +1,9 @@
 local sheep = {}
 
+sheep.message = "beeeeeeeeee"
+
 function sheep.fale()
-    print("beeeeeeeeee")
+    print(sheep.message)
 end
 
 return sheep
