@@ -7,6 +7,7 @@ local fileContent = file and file:read("a")
 local fileDecoded = fileContent and json.decode(fileContent) or {}
 
 print(inspect(fileDecoded))
+
 -- for key, value in pairs(fileDecoded) do
 --     print(key,value)
 -- end
