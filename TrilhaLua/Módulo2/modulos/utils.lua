@@ -13,9 +13,6 @@ function utils.enableUtf8()
 end
 
 ---calcula a barra de progresso ASCII baseado em um atributo
----@param attribute number Número de 0 a 10
----@return string
----
 
 function utils.progressBar(attribute)
     local fullchar = "⬜"

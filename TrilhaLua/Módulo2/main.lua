@@ -20,8 +20,8 @@ end
 local function convertMphToKmh(mph)
     return mph * 1.609
 end
-mph = 100
-kph = convertMphToKmh(mph)
+local mph = 100
+local kph = convertMphToKmh(mph)
 
 local function convertMany(mph1, mph2, mph3)
     local m1 = convertMphToKmh(mph1)

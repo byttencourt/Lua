@@ -2,7 +2,7 @@ local names = {"creeper","zombie","skeleton","panthom","enderman"}
 -- # + nome da table faz a contagem de quantos registros tem na tabela é o mesmo que len(names do python) pode ser utilizado diretamente.
 -- em lua as tabelas sempre iniciam a interação em 1 ~= de python
 
-function mostraNomes()
+local function mostraNomes()
     for i = 1, #names, 1 do
         print(names[i])
     end
