@@ -3,7 +3,7 @@ local Sheep = Animal:subclass("Sheep")
 
 function Sheep:initialize()
     Animal.initialize(self, "Sheep")
-    self.health = 4
+    self.health = 2
     self.maxHealth = 4
 end
 

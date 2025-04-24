@@ -4,6 +4,7 @@ local function isWindows()
   end
   
   local supported = not isWindows()
+  supported = true
   
   local kw = { -- Stands for KeyWord
     -- Reset

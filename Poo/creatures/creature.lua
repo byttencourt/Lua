@@ -1,4 +1,6 @@
 local class = require "libs.middleclass"
+local ansicolorsx = require "libs.ansicolorsx"
+local utils = require "libs.utils"
 
 local Creature = class("Creature")
 
@@ -43,6 +45,17 @@ end
 --- @return boolean
 function Creature:isDead()
     return not self:isAlive()    
+end
+
+function Creature:printInfo()
+    local hostile = self:isHostile()
+    print(ansicolorsx(string.format(
+    "%s       %s",
+    "%{white underline}" ..self:getName() .."%{reset}",
+    hostile and "%{red}(Hostíl)" or "%{green}(Dócil)"
+    )))
+    local healthRate = math.floor((self.health / self.maxHealth) * 10)
+    print(ansicolorsx("health: ".. utils.getProgressBar(healthRate)))
 end
 
 return Creature

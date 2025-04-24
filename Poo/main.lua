@@ -21,9 +21,10 @@ local creatures = {
     mySheep
 }
 for _, creature in pairs(creatures) do
-    local hostileString = creature:isHostile() and "hostil" or "docil"
-    local aliveString = creature:isAlive() and "viva" or "morta"
-    print(string.format("Nossa criatura %s é %s, e ela está %s", creature:getName(), hostileString, aliveString))
+    -- local hostileString = creature:isHostile() and "hostil" or "docil"
+    -- local aliveString = creature:isAlive() and "viva" or "morta"
+    -- print(string.format("Nossa criatura %s é %s, e ela está %s", creature:getName(), hostileString, aliveString))
+    creature:printInfo()
 end
 
 
@@ -31,3 +32,8 @@ end
 -- print(string.format("isHealthFull: %s", myCreeper:getHealthFull()))
 -- print(string.format("isAlive: %s", myCreeper:isAlive()))
 -- print(string.format("isDead: %s", myCreeper:isDead()))
+
+-- local color = require "libs.ansicolorsx"
+
+-- print(color '%{italic red}An italic text with red color!')
+-- print(color '%{bbluebg cyan}A text with bright blue background and cyan foreground color!')
